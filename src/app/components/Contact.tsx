@@ -84,7 +84,7 @@ export default function Contact() {
         transition={{ duration: 1.2, delay: 0.4 }}
       >
         <div className={style.contactInfo}>
-          <h2>Information personnel</h2>
+          <h2>Informations personnelles</h2>
           <div className={style.contactItem}>
             <Mail className={style.icon} />
             <div>
