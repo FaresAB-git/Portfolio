@@ -4,6 +4,7 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from "react";
 import { ExternalLink, Github } from 'lucide-react';
 
+
 export default function Projects() {
 
   const ref = useRef(null)
@@ -13,7 +14,7 @@ export default function Projects() {
   {
     title: "Ce portfolio",
     description: "Un portfolio simple avec plusieurs sections et quelques animations",
-    image: "/projetTest.png",
+    image: "/projetTest.PNG",
     technologies: ["React", "Next.js", "CSS"],
     codeLink: "https://github.com/mon-projet",
     demoLink: "https://demo.mon-projet.com",
@@ -23,7 +24,7 @@ export default function Projects() {
   {
     title: "Template app e-commerce",
     description: "Un template d'application e-commerce avec un panneau admin pour gérer les produits, les collections, le stock, un dashboard, etc.",
-    image: "/ProjetAppEcom.png",
+    image: "/ProjetAppEcom.PNG",
     technologies: ["Nest.js", "PostgreSQL", "Next.js", "TypeScript"],
     codeLink: "https://github.com/FaresAB-git/siteEcom",
     demoLink: "https://app.siteecomfares.fr",
@@ -33,7 +34,7 @@ export default function Projects() {
   {
     title: "Tableau Kanban",
     description: "Une application simple pour créer un tableau Kanban avec authentification, projets personnalisés et attribution de tâches aux membres.",
-    image: "/ProjetVue.png",
+    image: "/ProjetVue.PNG",
     technologies: ["Vue.js", "Express", "MongoDB"],
     codeLink: "https://github.com/FaresAB-git/app-fullstack",
     demoLink: "https://demo.deuxieme-projet.com",
