@@ -1,0 +1,121 @@
+.Headercontainer {
+  position: fixed;
+  top: 0;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: aliceblue;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.scrolled {
+  background-color: rgba(30, 15, 60, 0.9);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  margin-left: 2rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: linear-gradient(
+    156deg,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(80, 60, 120, 1) 40%,
+    rgba(110, 80, 150, 1) 60%,
+    rgba(70, 120, 170, 1) 80%,
+    rgba(50, 150, 190, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 8rem;
+  gap: 0.3rem;
+}
+
+.navElement {
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.navElement:hover {
+  background-color: blueviolet;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background-color: rgba(30, 15, 60, 0.95);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 2000;
+}
+
+.mobileMenu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.mobileMenu a:hover {
+  background-color: blueviolet;
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+.mobileMenu.open {
+  right: 0;
+}
+
+.closeButton {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+    margin-right: 0;
+  }
+
+  .Headercontainer {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .menuButton {
+    display: block;
+    margin-left: auto;
+  }
+}

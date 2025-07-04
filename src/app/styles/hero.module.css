@@ -1,0 +1,85 @@
+.container{
+    height: 100vh;
+    padding-top: 3rem;
+    color: antiquewhite;
+}
+
+.heroContainer{
+    width: 100%;
+    margin-top:15%;
+    text-align: center;
+}
+.nom{
+    font-size:70px;
+}
+
+.devTitle{
+    font-size:xx-large;
+    color:rgb(16, 140, 230);
+}
+.subText{
+    font-size:xx-large;
+    margin-top: 100px;
+}
+.btnContainer{
+    margin-top: 100px;
+}
+.btn{
+    background-color: rgb(16, 140, 230);
+    border-radius: 7px;
+    transition: 0.2s;
+    padding: 20px;
+}
+.btn:hover{
+    background-color: rgb(6, 86, 143)
+}
+
+@media screen and (max-width: 1024px) {
+  .nom {
+    font-size: 50px;
+  }
+
+  .devTitle {
+    font-size: 28px;
+  }
+
+  .subText {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .btnContainer {
+    margin-top: 100px;
+  }
+
+  .btn {
+    padding: 14px 20px;
+    font-size: 16px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nom {
+    font-size: 36px;
+  }
+
+  .devTitle {
+    font-size: 24px;
+  }
+
+  .subText {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+
+  .btnContainer {
+    margin-top: 100px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
+}

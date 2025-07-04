@@ -1,0 +1,152 @@
+.contactSection {
+  padding: 40px;
+  background-color: rgb(16, 140, 230);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.contactTitle{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.subTitle{
+    font-size:25px;
+    margin-bottom: 60px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contactInfo {
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
+}
+
+.contactInfo h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contactItem {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.contactForm {
+  flex: 1;
+  max-width: 450px;
+  min-width: 370;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  color: black;
+}
+
+.contactForm h2 {
+  margin-bottom: 5px;
+}
+
+.contactForm p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.formRow {
+  display: flex;
+  gap: 10px;
+}
+
+.contactForm textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contactForm button {
+  background: linear-gradient(
+  156deg,
+  rgba(10, 10, 10, 1) 0%,
+  rgba(30, 15, 60, 1) 40%,
+  rgba(39, 15, 82, 1) 60%,
+  rgba(10, 45, 100, 1) 80%,
+  rgba(2, 65, 112, 1) 100%
+);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contactForm button:hover {
+  opacity: 0.9;
+}
+
+.popupSuccess,
+.popupError {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  animation: fadeInOut 4s ease-in-out forwards;
+}
+
+.popupSuccess {
+  background-color: #d1f8d1;
+  color: #216e21;
+  border: 1px solid #b2e2b2;
+}
+
+.popupError {
+  background-color: #f8d1d1;
+  color: #8a1f1f;
+  border: 1px solid #e2b2b2;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

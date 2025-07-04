@@ -1,0 +1,188 @@
+.projectsContainer {
+  background-color: rgba(30, 15, 60, 1);
+  min-height: 100vh;
+  width: 100%;
+  color: aliceblue;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.projectsTitle {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.subTitle {
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+.projectsCardContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: whitesmoke;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(16, 140, 230);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.projectVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  border-radius: 5px 5px 0px 0px;
+  z-index: 1;
+}
+
+.projetImgContainer {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: solid 0px rgba(30, 15, 60, 1);
+}
+
+.projectImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px 5px 0px 0px;
+  z-index: 0;
+  position: relative;
+}
+
+.card:hover .projectImg {
+  display: none;
+}
+
+.card:hover .projectVideo {
+  display: block;
+}
+
+.textContainer {
+  width: 90%;
+  height: 28%;
+  margin-inline: auto;
+  text-align: left;
+  padding-inline: 20px;
+  padding-top: 20px;
+}
+
+.projectTitle {
+  font-size: 20px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.projectText {
+  font-size: 15px;
+}
+
+.badgeContainer {
+  height: 10%;
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.badge {
+  background-color: rgba(10, 85, 140, 0.1);
+  color: rgba(10, 85, 140, 1);
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.btnContainer {
+  width: 90%;
+  height: 15%;
+  margin-inline: auto;
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.btn {
+  width: 200px;
+  height: 40px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 5px;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  border: solid 1px lightgrey;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: rgba(214, 206, 206, 0.788);
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Responsive mobile / tablette */
+@media screen and (max-width: 768px) {
+  .projectsContainer {
+    min-height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .projectsCardContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card {
+    width: 350px;
+    height: 475px;
+  }
+
+  .badgeContainer {
+    flex-wrap: wrap;
+  }
+
+  .projectText {
+    font-size: 13px;
+  }
+}
